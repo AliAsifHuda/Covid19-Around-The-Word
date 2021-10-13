@@ -1,0 +1,139 @@
+* {
+    -color : #efefef;
+    -white : #efefef;
+    -gray : #dfdfdf;
+    -darkGray : derive(-gray,-25%);
+    -abort : #e74c3c;
+    -black : #000000;
+    -blue : #005cc8;
+}
+
+.root{
+    -fx-background-color : #fffffe;
+    -fx-fill-width : true;
+    -fx-color : -color;
+    -fx-fill-height : true;
+    -fx-font-family: 'Calibri';
+    /* remove the ugly focus shade */
+    -fx-focus-color : transparent;
+    -fx-faint-focus-color: transparent;    
+}
+
+/*
+* **********
+* LABELS
+* **********
+*/
+.label{
+    -fx-text-fill : #8e8e8e;
+    -fx-font-size : 13;
+    -fx-font-weight : lighter;
+    -fx-font-family : 'Arial';
+    -fx-font-style : oblique;
+    -fx-text-fill: black;
+    -fx-padding : 12 4 4 4;
+}
+
+/*
+* **********
+* TEXT FIELD
+* **********
+*/
+.text-field 
+{
+    -fx-background-color: #ffffff;    
+    -fx-font-family : 'Arial';
+    -fx-font-size : 13;
+    -fx-background-radius: 2, 2, 2, 2;
+    -fx-padding: 8;
+    -fx-pref-width: 300;
+    -fx-border-color: black;
+}
+
+/*
+* **********
+* COMBO BOX
+* **********
+*/
+.combo-box-base  
+{
+    -fx-background-color: #ffffff;
+    -fx-font-size : 22;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+    -fx-pref-width: 300;
+}
+
+/*
+* **********
+* BUTTONS
+* **********
+* 
+*/
+.button {
+    
+    -fx-font-size : 20;
+    -fx-background-color : #4169e1;
+    -fx-font-weight : bolder;
+    -fx-font-family : 'Times New Roman';
+    -fx-font-style : normal;
+    -fx-text-fill: #ffffff;
+    -fx-padding : 5 250 5 250;
+}
+
+.button:cancel{
+    -fx-background-color : -abort;
+}
+
+.button:focused {
+    -fx-color : -darkGray;
+    -fx-background-color : -darkGray;
+    -fx-focus-color : -darkGray;
+}
+.button:hover {
+    -fx-color: -darkGray;
+    -fx-inner-border : -darkGray;
+    -fx-body-color : -darkGray;
+}
+
+.button:armed {
+    -fx-color: -white;
+}
+
+
+.toggle-button{
+    -fx-background-color : -gray;
+}
+
+.toggle-button:selected{
+    -fx-background-color : -darkGray;
+}
+
+/*
+* **********
+* Table
+* **********
+* 
+
+.table-view:row-selection{
+    -fx-background-color : -gray;
+}
+
+.table-view:row-selection>*.column-header-background{
+    -fx-background-color : -white;
+}
+
+.table-view>*.column-resize-line{
+    -fx-background-color : -black;
+}
+
+.table-view>*.column-header-background>*.filler{
+    -fx-background-color : -darkGray, -gray;
+}
+
+.table-view>*.column-header-background>*.show-hide-columns-button{
+    -fx-background-color : -gray;
+}
+}
+
