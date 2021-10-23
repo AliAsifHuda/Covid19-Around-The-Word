@@ -1,5 +1,9 @@
 # Covid19-Around-The-World
 
+```
+  To start the application execute the `Run JavaFx Application` method in the CovidGui class.
+```
+
 This application scrapes data from the web to get the latest statistics related to covid 19 from around the world. It
 then displays it on a GUI with features to sort and search and save data.
 
